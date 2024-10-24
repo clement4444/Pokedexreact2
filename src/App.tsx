@@ -40,7 +40,6 @@ function App() {
       <MyTitle />
       <PokemonCard pokemon={pokemon} />
       <NavBar
-        pokemonIndex={pokemonIndex}
         setPokemonIndex={setPokemonIndex}
         pokemonList={pokemonList} />
     </section>
