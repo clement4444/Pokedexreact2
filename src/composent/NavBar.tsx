@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface verifPokemon {
     name: string,
     imgSrc?: string
@@ -11,6 +13,9 @@ interface NavBarProps {
 function NavBar({ setPokemonIndex, pokemonList }: NavBarProps) {
     const handSelectPokemon = function (index) {
         setPokemonIndex(index);
+        if (pokemonList[index].name === "pikachu") {
+            alert("pika pikachu !!!");
+        }
     }
     return (
         <>
